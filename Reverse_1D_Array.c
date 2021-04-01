@@ -53,4 +53,25 @@ int main(void)
     } // end for
 
     printf("%s", "\n\n");
-}
+
+    // -----------------------------------------------------------------------------------------------------
+    
+    // The below code is the one submitted on hackerrank.com which works with dynamic array
+    int num, *arr, i;
+    scanf("%d", &num);
+    arr = (int*) malloc(num * sizeof(int));
+    for(i = 0; i < num; i++) {
+        scanf("%d", arr + i);
+    }
+    
+    for (size_t j = 0; j < num / 2; j++) {
+        int temp = 0;
+        temp = arr[j];
+        arr[j] = arr[num - j - 1];
+        arr[num - j - 1] = temp;
+    }
+
+    for(i = 0; i < num; i++) {
+        printf("%d ", *(arr + i));
+    } // end for
+} // end function main

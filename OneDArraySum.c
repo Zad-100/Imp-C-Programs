@@ -45,4 +45,6 @@ int main(void)
     } // end for
 
     printf("\nThe sum of the elements of the array is %d\n\n", sum);
+
+    free(oneDArray); // free function clears the memory containing the array elements
 } // end function main

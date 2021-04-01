@@ -15,12 +15,12 @@ int main(void)
     unsigned int sizeOfArray;
     int sum = 0;
 
+    printf("%s", "\nEnter the size of the array that you want to create : "); // prompt
+    scanf("%u", &sizeOfArray); // read and store
+    
     // malloc is a function that allocates a block of (sizeOfArray * size of integer) bytes of memory,
     // returning a pointer to the beginning of the block
     int* oneDArray = (int*) malloc(sizeOfArray * sizeof(int)); // declaring the dynamic array using malloc
-    
-    printf("%s", "\nEnter the size of the array that you want to create : "); // prompt
-    scanf("%u", &sizeOfArray); // read and store
 
     for (size_t i = 0; i <= (sizeOfArray - 1); i++) {
         printf("\nEnter element # %2u : ", (i + 1));

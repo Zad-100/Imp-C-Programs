@@ -57,4 +57,13 @@ int main(void)
     // }
 
     // printf("%s", "\n\n");
+
+    // The code posted on the 'Discussions' area.
+    // for (char *c = s; *c != NULL; c++) {
+    //     if(*c == ' ') {
+    //         *c = '\n';
+    //     }
+    // }
+    
+    // printf("%s", s);
 } // end function main

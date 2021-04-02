@@ -33,4 +33,28 @@ int main(void)
     } // end for
 
     printf("%s", "\n\n");
+
+    // Now, the below codes are the two codes that I submitted on hackerrank.com.
+    // These codes deal with dynamic arrays and uses pointers and related functions
+    // extensively. I am not yet very clear about the difference. Also, I am not yet
+    // familiar with the functions used in the below codes.
+
+    // Editorial one :-
+    // char *s;
+    // s = malloc(1024 * sizeof(char));
+    // scanf("%[^\n]", s);
+    // s = realloc(s, strlen(s) + 1);
+    
+    // int lenght = strlen(s);
+    // for (size_t i = 0; i <= lenght - 1; i++) {
+    //     if (s[i] == ' ') {
+    //         printf("%s", "\n");
+    //     }
+    //     else
+    //     {
+    //         printf("%c", s[i]);
+    //     }
+    // }
+
+    // printf("%s", "\n\n");
 } // end function main
